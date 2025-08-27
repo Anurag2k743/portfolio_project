@@ -1,38 +1,381 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*  Root Variables */
+:root {
+  --primary-color: #D3FD06;
+  --secondary-color: #000000;
+  --text-color: #FFFFFF;
+
+  /* 🔠 Font Sizes */
+  --font-h1: 215px;
+  --font-h2: 165px;
+  --font-h3: 96px;
+  --font-h4: 24px;
+  --font-h5: 40px;
+  --font-h6: 18px;
+  --font-body: 16px;
+  --font-small: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Base Styles */
+
+body {
+  font-family: 'Roboto-Regular';
+  background-color: var(--secondary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Staatliches';
+  src: url('../public/fonts/Staatliches-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+/* Global Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Staatliches;
+}
+
+section {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: var(--font-h1);
+  font-weight: 400;
+  line-height: 200px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: var(--font-h2);
+  font-weight: 400;
+  line-height: 145px;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: var(--font-h3);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: var(--font-h4);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--font-h5);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--font-h6);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--font-h4);
+  font-weight: 400;
+  color: var(--text-color);
+  font-family: Roboto-Regular;
+}
+
+.paret {
+  color: var(--primary-color);
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.btn {
+  padding: 12px 44px;
+  border: 1px solid #FFFFFF;
+  border-radius: 32px;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: var(--font-h4);
+}
+
+.space-top {
+  margin-top: 55px;
+}
+
+header .right-sect {
+  display: flex;
+  justify-content: end;
+  gap: 54px;
+}
+
+.left-sect,
+.right-sect {
+  width: 50%;
+}
+
+.hero {
+  margin-top: 90px;
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  gap: 52px;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.digital {
+  background: var(--primary-color);
+  border-radius: 32px;
+  padding: 20px 55px;
+}
+
+.circale {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.creative {
+  margin-top: 155px;
+}
+
+.creative h3 {
+  color: var(--primary-color);
+  margin-right: 25px;
+}
+
+.creative h5 {
+  color: var(--text-color);
+}
+
+.years {
+  max-width: 257px;
+}
+
+.started {
+  margin-top: 96px;
+}
+
+.creative-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 55px;
+}
+
+.creative h2 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.creative-text {
+  max-width: 627px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.creative-content {
+  margin-top: 96px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 92px;
+}
+
+.main-space {
+  margin-top: 155px;
+}
+
+.present {
+  margin-top: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.present-left {
+  max-width: 682px;
+  width: 100%;
+  position: relative;
+}
+
+.present-left h4 {
+  color: var(--text-color);
+}
+
+.present-right {
+  max-width: 383px;
+}
+
+.download-resume {
+  margin-top: 55px;
+  display: flex;
+  gap: 15px;
+}
+
+.download-resume a {
+  font-size: var(--font-h4);
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.director {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.Designer {
+  margin-top: 55px;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 32px;
+
+}
+
+.director, 
+.Designer {
+  transition: all 0.3s ease;
+  opacity: 0.5; 
+}
+
+.director.active, 
+.Designer.active {
+  opacity: 1;                
+}
+
+.viretori{
+  height: 147px;
+  width: 147px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position:absolute;
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* // slider css */
+.my-slider {
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide-card {
+  width: 100%;
+  max-width: 484px;
+  height: 506px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-card img.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient overlay */
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 47px 113px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #d6ff00, #d6ff00);
+  border-radius: 32px;
+}
+
+/* Custom nav buttons */
+.slider-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slider-controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-prev,
+.custom-next {
+  width: 96px;
+  height: 96px;
+  background: transparent;
+  color: #d6ff00;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent; 
+}
+
+/* Active state */
+.custom-prev:not(.swiper-button-disabled),
+.custom-next:not(.swiper-button-disabled) {
+  border-color: #d6ff00;
+}
+
+/* Disabled state */
+.custom-prev.swiper-button-disabled,
+.custom-next.swiper-button-disabled {
+  border-color: #666;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Right arrow flipped */
+.right-arrow {
+  transform: rotate(180deg);
 }
