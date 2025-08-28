@@ -9,7 +9,7 @@ const Hero = () => {
             <section className='hero'>
                 <div className="container">
                     <div className='banner'>
-                        <div>
+                        <div className='stark'>
                             <img src={STARK} alt="" />
                         </div>
                         <div>
