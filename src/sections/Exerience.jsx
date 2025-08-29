@@ -19,7 +19,7 @@ const Exerience = () => {
           <div className='present'>
             <div className='present-left' style={{ position: "relative" }}>
               <div
-                className={`director ${activeTab === "director" ? "active" : ""}`}  Click={() => setActiveTab("director")}>
+                className={`director ${activeTab === "director" ? "active" : ""}`}  onClick={() => setActiveTab("director")}>
                 <p className='paret'>2023 - Present</p>
                 <div className='flex'>
                   <h4>Art Directo</h4>
