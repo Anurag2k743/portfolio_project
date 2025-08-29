@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import client1 from "../assets/images/clients.png";
 import client2 from "../assets/images/clients.png";
 import client3 from "../assets/images/clients.png";
-import leftarrow from "../assets/images/left-arrow.png";
+import sliderarrow from "../assets/images/left-arrow.png";
 import quote from "../assets/images/Elment.png";
 
 
@@ -51,12 +51,12 @@ export default function ClientsSlider() {
             <div
               ref={prevRef}
               className={`swiper-button-prev-custom ${isBeginning ? "disabled" : ""}`} >
-              <img src={leftarrow} alt="prev" />
+              <img src={sliderarrow} alt="prev" />
             </div>
             <div
               ref={nextRef}
               className={`swiper-button-next-custom ${isEnd ? "disabled" : ""}`}   >
-              <img src={leftarrow} alt="next" className="arrow-right" />
+              <img src={sliderarrow} alt="next" className="arrow-right" />
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function ClientsSlider() {
             setIsBeginning(swiper.isBeginning);
             setIsEnd(swiper.isEnd);
           }}
-          className="clients-swiper" >
+          className="clients-swiper " >
           {clients.map((client) => (
             <SwiperSlide key={client.id}>
               <div className="client-slide">

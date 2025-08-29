@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="container">
-                <section className="contact-section">
+                <section className="contact-section border-bottom">
                     {/* Left Column */}
                     <div className="contact-left">
                         <p>

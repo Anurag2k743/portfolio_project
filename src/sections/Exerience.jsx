@@ -66,9 +66,7 @@ const Exerience = () => {
                         </div>
                     </div>
 
-                    {/* <div className='viretori'>
-                            <img src={vire} alt="" />
-                    </div> */}
+                
                 </div>
             </section>
         </>

@@ -54,6 +54,7 @@ img {
 }
 
 /* Global Headings */
+
 h1,
 h2,
 h3,
@@ -374,7 +375,7 @@ header .right-sect {
   width: 96px;
   height: 96px;
   background: transparent;
-  color: #d6ff00;
+  color: var(--primary-color);
   font-size: 20px;
   border-radius: 6px;
   transition: all 0.3s ease;
@@ -384,15 +385,23 @@ header .right-sect {
 
 .custom-prev:not(.swiper-button-disabled),
 .custom-next:not(.swiper-button-disabled) {
-  border-color: #d6ff00;
+  border-color: var(--primary-color);
 }
 
 .custom-prev.swiper-button-disabled,
 .custom-next.swiper-button-disabled {
-  border-color: #666;
+  border-color: var(--text-color);
   color: var(--text-color);
   cursor: not-allowed;
   opacity: 0.5;
+}
+.client_slider{
+  
+    overflow: visible !important;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
 }
 
 
@@ -475,7 +484,6 @@ header .right-sect {
 
 /* Slider layout */
 
-/* Client slide layout */
 .client-slide {
   display: flex;
   justify-content: space-between;
@@ -487,7 +495,6 @@ header .right-sect {
   width: 483px;
   height: 480px;
   border-radius: 32px;
-  overflow: hidden;
 }
 
 .client-img img {
@@ -525,7 +532,7 @@ header .right-sect {
 
 .clients-nav {
   display: flex;
-  gap: 12px;
+  gap: 45px;
 }
 
 .swiper-button-prev-custom,
@@ -542,11 +549,7 @@ header .right-sect {
   background: transparent;
 }
 
-.swiper-button-prev-custom img,
-.swiper-button-next-custom img {
-  width: 32px;
-  height: 32px;
-}
+
 
 .arrow-right {
   transform: rotate(180deg);
@@ -574,6 +577,9 @@ header .right-sect {
   justify-content: space-between;
   align-items: start;
   padding-bottom: 55px;
+}
+.border-bottom{
+    border-bottom: 1px solid var(--text-color);
 }
 
 .contact-left {
@@ -618,11 +624,7 @@ header .right-sect {
 }
 
 
-
-
-
 /* contact form */
-
 
 .contact-form {
   max-width: 500px;
@@ -633,6 +635,7 @@ header .right-sect {
   box-shadow: 0 0 20px rgba(204, 255, 0, 0.2);
   position: relative;
   z-index: 999;
+  background-color: var(--secondary-color);
 }
 
 .form-main {
@@ -673,7 +676,6 @@ header .right-sect {
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
-  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -682,28 +684,11 @@ header .right-sect {
   color: #000;
 }
 
-.contact-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  z-index: 99;
-}
+
 
 .contact-container {
-  background: #000;
-  border: 2px solid #ccff00;
-  border-radius: 16px;
   padding: 40px;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 25px rgba(204, 255, 0, 0.4);
+  width: 30%;
   position: relative;
   top: 70px;
 }
@@ -738,13 +723,3 @@ header .right-sect {
   z-index: 99;
 }
 
-.contact-container {
-  background: #000;
-  border: 2px solid var(--primary-color);
-  border-radius: 16px;
-  padding: 40px;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 25px rgba(204, 255, 0, 0.4);
-  position: relative;
-}
