@@ -6,12 +6,13 @@
 
 
 /*  Root Variables */
+
 :root {
+
   --primary-color: #D3FD06;
   --secondary-color: #000000;
   --text-color: #FFFFFF;
 
-  /* 🔠 Font Sizes */
   --font-h1: 215px;
   --font-h2: 165px;
   --font-h3: 96px;
@@ -22,7 +23,6 @@
   --font-small: 14px;
 }
 
-/* Base Styles */
 
 body {
   font-family: 'Roboto-Regular';
@@ -53,7 +53,6 @@ img {
   font-weight: 400;
 }
 
-/* Global Headings */
 
 h1,
 h2,
@@ -322,10 +321,6 @@ header .right-sect {
   left: 50%;
   transition: top 0.3s ease;
 }
-
-
-
-
 
 /* slider css */
 
