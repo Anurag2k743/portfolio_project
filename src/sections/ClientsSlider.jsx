@@ -91,14 +91,13 @@ export default function ClientsSlider() {
                   <p>{client.position}</p>
                 </div>
               </div>
-
-              <div className="quote">
-                <img src={quote} alt="" />
-              </div>
-
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <div className="quote">
+          <img src={quote} alt="" />
+        </div>
       </div>
     </section>
   );
