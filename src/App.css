@@ -251,6 +251,8 @@ header .right-sect {
   gap: 92px;
 }
 
+/* Expreience section */
+
 .present {
   margin-top: 69px;
   display: flex;
@@ -264,7 +266,7 @@ header .right-sect {
   position: relative;
 }
 
-.present-left h4 {
+.present-left h5 {
   color: var(--text-color);
 }
 
@@ -316,10 +318,16 @@ header .right-sect {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top:0;
+  left: 50%;
+  transition: top 0.3s ease;
 }
 
-/* // slider css */
+
+
+
+
+/* slider css */
 
 .my-slider {
   width: 100%;
